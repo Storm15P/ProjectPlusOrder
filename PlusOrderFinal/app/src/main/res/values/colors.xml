@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F6DB29</color>
+    <color name="orange">#F17837</color>
+    <color name="MeatColor">#400701</color>
+    <color name="MeatLight">#810D01</color>
+    <color name="NewOrange">#A83E0C</color>
+</resources>

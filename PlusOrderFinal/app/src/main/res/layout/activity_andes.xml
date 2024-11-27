@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/bgorange">
+
+    <TextView
+        android:id="@+id/textAndes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANDES"
+        android:textSize="27dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/layoutAndes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textAndes"
+        android:padding="1dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/andes"></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/precioAndes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$ 31.900"
+        android:textSize="27dp"
+        android:layout_below="@+id/layoutAndes"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/descripcionAndes"
+        android:layout_below="@id/precioAndes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pan fresco tipo brioche con queso parmesano, doble carne, doble queso: queso asado y sour cream, costilla bien adobada y despelucada, tocineta ahumada, salsa agridulce, guacamole, tomate fresco y hojas de lechuga verde. "
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <TextView
+        android:id="@+id/terminoCarne"
+        android:layout_below="@id/descripcionAndes"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona termino de la carne"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/carnes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/terminoCarne">
+        <RadioGroup
+            android:id="@+id/meatRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medio"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/radioThreeQuarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/4"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioWellDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bien Asada"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eleccionpapa"
+        android:layout_below="@+id/carnes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona papas"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/papas"
+        android:layout_below="@+id/eleccionpapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RadioGroup
+            android:id="@+id/friesRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioFrenchFries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Francesa"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioRusticFries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rústica"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioOnionRings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aros de cebolla"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hamburguesas"
+        android:layout_below="@id/papas"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona cantidad de hamburguesas"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_below="@+id/hamburguesas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:theme="@style/AppTheme.Picker"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:backgroundTint="@color/yellow"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atras"
+            android:backgroundTint="@color/yellow"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black">
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

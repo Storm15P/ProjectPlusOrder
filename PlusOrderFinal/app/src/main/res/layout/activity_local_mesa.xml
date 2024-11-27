@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/hamburguesasbgk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/burgerwhite">
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Que deseas realizar?"
+        android:textSize="27dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textChoose"
+        android:layout_marginRight="20dp"
+        android:text="Reservar una mesa"
+        app:cornerRadius="48dp"
+        android:backgroundTint="@color/MeatColor">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/btnIrReclamo"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnWhatsApp"
+        android:text="Solo ir a reclamar"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cornerRadius="48dp"
+        android:backgroundTint="@color/MeatColor">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/btnCatalogo"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnIrReclamo"
+        android:text="Ir al catalogo"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cornerRadius="48dp"
+        android:backgroundTint="@color/MeatColor">
+    </com.google.android.material.button.MaterialButton>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>
